@@ -37,3 +37,23 @@
 // 	After inserting 530, the list is 141 -> 302 -> 164 -> 530 -> NULL. After inserting 474, the list is 141 -> 302 -> 164 -> 530 -> 474 -> NULL, which is the final list.
 
 
+// removed the head number from the list
+
+// function insertNodeAtTail(head, data) {
+// 	let newNode = new SinglyLinkedListNode(data)
+// 	if (!head) {
+// 		head = newNode
+// 		return head
+// 	}
+// 	let current  = head
+// 	while (current.next) {
+// 		current = current.next
+// 	}
+// 	current.next = newNode
+// 	return head
+// }
+
+//MEDIUM LINK
+
+//https://medium.com/swlh/javascript-inserting-a-node-at-the-head-of-a-linked-list-160b68e7abcb
+
