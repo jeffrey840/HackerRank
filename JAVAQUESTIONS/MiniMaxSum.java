@@ -33,15 +33,7 @@ miniMaxSum 4/5 elements = [3,5,7,9] = 24, ignore 1
             if(tot<min){
                 min=tot;
             }
-
-
-
         }
         System.out.println(min+" "+max);
-
-
     }
-
-
-
 }
