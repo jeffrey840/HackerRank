@@ -4,5 +4,5 @@ function designerPdfViewer(h, word) {
 		let charIndex = word.charCodeAt(i) - 97;
 		maxHeight = Math.max(maxHeight, h[charIndex]);
 	}
-	return maxHeight * word.length;
+	return maxHeight * word.length;///
 }
