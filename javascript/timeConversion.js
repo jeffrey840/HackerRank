@@ -1,11 +1,20 @@
 function timeConversion(s) {
-	let [time, part] = [s.substring(0, s.length - 2), s.substring(s.length - 2)]
-	time = time.split(":").map(Number)
-	if (part === "PM" && time[0] === 12) time[0] = 12
-	if (part === "PM" && time[0] !== 12) time[0] = (time[0] + 12) % 24
-	if (part === "AM" && time[0] === 12) time[0] = 0
-	return time
-		.map(String)
-		.map(s => s.padStart(2, "0"))
-		.join(":")
+	let hours = parseInt(s.substr(0, 2));
+	let minutes = s.substr(3, 2);
+	let seconds = s.substr(6, 2);
+	let meridiem = s.substr(8, 2);
+
+	if (meridiem === "PM" && hours !== 12) {
+		hours += 12;
+	} else if (meridiem === "AM" && hours === 12) {
+		hours = 0;
+	}
+
+	return (
+		(hours < 10 ? "0" + hours : hours) +
+		":" +
+		minutes +
+		":" +
+		seconds
+	);
 }
