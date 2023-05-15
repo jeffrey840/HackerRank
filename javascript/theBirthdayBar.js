@@ -11,4 +11,3 @@ function birthday(s, d, m) {
 	}
 	return ways;
 }
-//
