@@ -32,4 +32,7 @@ public class javaArraylist {
 
         scanner.close();
     }
+
+
+
 }
